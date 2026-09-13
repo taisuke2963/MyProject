@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>バーチャル社員チャット</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1>バーチャル社員</h1>
+      <div id="employee-list" class="employee-list"></div>
+    </aside>
+    <main class="chat">
+      <header id="chat-header" class="chat-header">社員を選択してください</header>
+      <div id="chat-messages" class="chat-messages"></div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="メッセージを入力…" autocomplete="off" disabled />
+        <button type="submit" disabled>送信</button>
+      </form>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
